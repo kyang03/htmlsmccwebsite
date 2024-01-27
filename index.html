@@ -10,28 +10,47 @@
       font-family: Arial, sans-serif;
       background-color: #fff;
       color: #000;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #1c63aa; /* Navy Blue */
+      background-color: #001f3f; /* Navy Blue */
       padding: 15px;
       text-align: center;
+      color: #ffdc00; /* Sunflower Yellow */
     }
 
     nav {
-      background-color: #fdea6e; /* Sunflower Yellow */
+      background-color: #ffdc00; /* Sunflower Yellow */
       padding: 10px;
       text-align: center;
     }
 
     nav a {
-      margin: 0 10px;
+      margin: 0 15px;
       text-decoration: none;
-      color: #006fdf; /* Navy Blue */
+      color: #001f3f; /* Navy Blue */
+      font-weight: bold;
+      font-size: 18px;
     }
 
     section {
       padding: 20px;
+    }
+
+    .panel {
+      border: 2px solid #001f3f; /* Navy Blue */
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    aside {
+      background-color: #fcf0a3; /* Sunflower Yellow */
+      padding: 15px;
+      border: 2px solid #001f3f; /* Navy Blue */
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     footer {
@@ -39,6 +58,46 @@
       color: #fff;
       padding: 10px;
       text-align: center;
+    }
+
+    /* Additional styles for specific sections */
+    .school-logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .vision-mission {
+      margin-bottom: 20px;
+    }
+
+    .courses-list {
+      margin-bottom: 20px;
+    }
+
+    .services-list {
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      margin-bottom: 20px;
+    }
+
+    /* Style for list items */
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    /* Style for links */
+    a {
+      color: #001f3f; /* Navy Blue */
+    }
+
+    @media only screen and (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
     }
   </style>
 </head>
@@ -56,28 +115,130 @@
     <a href="#contact">Contact Us</a>
   </nav>
 
-  <section id="home">
-    <h2>Welcome to SMCC Website</h2>
+  <section id="home" class="panel">
+    <div class="school-logo">
+      <img src="images/logo.png" alt="School Logo" height="300">
+    </div>
+    <h2 style="text-align: center;">SAINT MICHAEL COLLEGE OF CARAGA</h2>
   </section>
 
-  <section id="about">
-    <h2>About Saint Michael College of Caraga</h2>
-    <p>Location: Atupan St. Barangay 4, Nasipit Agusan Del Norte</p>
+  <section id="about" class="panel">
+    <div class="vision-mission">
+      <h2>Vision</h2>
+      <p>Saint Michael College of Caraga Envisions to be a University by 2035 and Upholds Spiritual Formation and Excellence in Teaching, Service, and Research.</p>
+    </div>
+    <div class="vision-mission">
+      <h2>Mission</h2>
+      <p>SMCC shall provide spiritual formation and learning culture that will ensure the students with excellent and rewarding learning experience that transform lives, abound spirituality, develop skills and prepare future leaders.</p>
+      <hr>
+      <p>SMCC shall engage in dynamic, innovative, and interdisciplinary researches that are publishable to advance and achieve institutional initiatives.</p>
+      <hr>
+      <p>SMCC shall commit to serve the diverse and local communities in fostering innovations through service-learning that enhances reciprocal community partnerships for spiritual and social development.</p>
+
+      <h2>Goal </h2>
+        <p>
+  </h2>
+        </p>
+        Uphold Culture of Excellence in the Areas of Spiritual Formation, Instruction, Research, and Extension, thus Produce Graduates that are Globally Competent, Spiritally Embodied, and Socially Responsible.
+    </div>
+    
   </section>
 
-  <section id="courses">
-    <h2>Courses Offered</h2>
-    <!-- Add course details here -->
+  <section id="courses" class="panel">
+    <h2 style="text-align: center;">Courses Offered</h2>
+
+    <div class="courses-list">
+      <aside class="panel">
+        <h3>College of Arts and Sciences</h3>
+        <ul>
+          <li>Bachelor of Arts major in English Language</li>
+          <!-- Add more courses as needed -->
+        </ul>
+      </aside>
+
+      <aside class="panel">
+        <h3>College of Business and Management</h3>
+        <ul>
+          <li>Bachelor of Science in Business Administration major in Financial Management</li>
+          <li>Bachelor of Science in Business Administration major in Human Resource Management</li>
+          <li>Bachelor of Science in Business Administration major in Marketing Management</li>
+          <li>Bachelor of Public Administration</li>
+          <li>Bachelor of Science in Entrepreneurship</li>
+          
+          <!-- Add more courses as needed -->
+        </ul>
+      </aside>
+
+      <aside class="panel">
+        <h3>College of Computing and Information Science</h3>
+        <ul>
+          <li>Bachelor of Science in Information Technology</li>
+          <li>Bachelor of Science in Computer Science</li>
+          <li>Bachelor of Library and Information Science</li>
+          <li>Diploma In Information Technology</li>
+          <!-- Add more courses as needed -->
+        </ul>
+      </aside>
+
+      <aside class="panel">
+        <h3>College of Criminal Justice Education</h3>
+        <ul>
+          <li>Bachelor of Science in Criminology</li>
+          <!-- Add more courses as needed -->
+        </ul>
+      </aside>
+
+      <aside class="panel">
+        <h3>College of Teacher Education</h3>
+        <ul>
+          <li>Bachelor of Elementary Education</li>
+          <li>Bachelor of Secondary Education major in English</li>
+          <li>Bachelor of Secondary Education major in Science</li>
+          <li>Bachelor of Secondary Education major in Social Studies</li>
+          <li>Bachelor of Physical Education</li>
+          <li>Bachelor of Technical Vocational Teacher Education</li>
+          <!-- Add more courses as needed -->
+        </ul>
+      </aside>
+
+      <aside class="panel">
+        <h3>College of Tourism and Hospitality Management</h3>
+        <ul>
+          <li>Bachelor of Science in Hospitality Management</li>
+          <li>Bachelor of Science in Tourism Management</li>
+          <li>Diploma in Hospitality Management Technology</li>
+          <li>Diploma in Tourism Management Technology</li>
+          <li>Food and Beverage Services NC II</li>
+          <li>Housekeeping NC II</li>
+          <li>Ship's Catering Services NC I</li>
+          <!-- Add more courses as needed -->
+        </ul>
+      </aside>
+    </div>
   </section>
 
-  <section id="services">
+  <section id="services" class="panel">
     <h2>Services</h2>
-    <!-- Add services information here -->
+    <div class="services-list">
+      <aside class="panel">
+        <h3>Admission & Scholarship Services</h3>
+        <ul>
+          <li>College First Year Students except BSED and BEED Programs</li>
+          <!-- Add admission & scholarship services details -->
+        </ul>
+      </aside>
+      <!-- Add other service sections similarly -->
+    </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="panel">
     <h2>Contact Us</h2>
-    <!-- Add contact information and form here -->
+    <div class="contact-info">
+      <p><a href="https://www.facebook.com/SMCCofficial">Facebook</a></p>
+      <p>Email: admin@smccnasipit.edu.ph</p>
+      <p>Phone: (085) 225-0208 / 0906-404-8695</p>
+      <p>Opening Hours: 8:00 am - 5:00 pm</p>
+    </div>
   </section>
 
   <footer>
