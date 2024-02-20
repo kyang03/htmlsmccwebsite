@@ -14,7 +14,7 @@ body {
   }
 
   .jumbotron {
-    background-image: url('images/k.jpg');
+    background-image: url('images/logo.png');
     background-size: cover;
     background-position: center;
     color: #002b7a; /* Navy Blue */
