@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light Gray */
+    color: #343a40; /* Dark Gray */
+    line-height: 1.6;
+  }
+
+  .navbar {
+    background-color: #001f3f; /* Navy Blue */
+  }
+
+  .navbar a {
+    color: #ffdc00; /* Sunflower Yellow */
+  }
+
+  .jumbotron {
+    background-image: url('images/k.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #002b7a; /* Navy Blue */
+    font-weight: bolder;
+    margin-top: 1in;
+    padding: 2rem;
+  }
+
+  .card {
+    border: 2px solid #001f3f; /* Navy Blue */
+    background-color: #ecdd7c;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .list-group-item {
+    border: none;
+    color: #001f3f;
+    font-weight: bold;
+    background-color: #ecdd7c;
+  }
+
+  .footer {
+    background-color: #001f3f; /* Navy Blue */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 1in;
+  }
+
+  /* Additional styles for a cleaner appearance */
+  h2, h3 {
+    color: #001f3f; /* Navy Blue */
+  }
+
+  hr {
+    background-color: #001f3f; /* Navy Blue */
+  }
+
+  .vision-mission p {
+    color: #343a40; /* Dark Gray */
+  }
+
+  .container {
+    margin-top: 30px; /* Space between navbar and content */
+  }

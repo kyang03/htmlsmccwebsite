@@ -1,249 +1,229 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SMCC Website</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      color: #000;
-      line-height: 1.6;
-    }
+  <link rel="stylesheet" href="style.css">
 
-    header {
-      background-color: #001f3f; /* Navy Blue */
-      padding: 15px;
-      text-align: center;
-      color: #ffdc00; /* Sunflower Yellow */
-    }
-
-    nav {
-      background-color: #ffdc00; /* Sunflower Yellow */
-      padding: 10px;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #001f3f; /* Navy Blue */
-      font-weight: bold;
-      font-size: 18px;
-    }
-
-    section {
-      padding: 20px;
-    }
-
-    .panel {
-      border: 2px solid #001f3f; /* Navy Blue */
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-    }
-
-    aside {
-      background-color: #fcf0a3; /* Sunflower Yellow */
-      padding: 15px;
-      border: 2px solid #001f3f; /* Navy Blue */
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    footer {
-      background-color: #001f3f; /* Navy Blue */
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-
-    /* Additional styles for specific sections */
-    .school-logo {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .vision-mission {
-      margin-bottom: 20px;
-    }
-
-    .courses-list {
-      margin-bottom: 20px;
-    }
-
-    .services-list {
-      margin-bottom: 20px;
-    }
-
-    .contact-info {
-      margin-bottom: 20px;
-    }
-
-    /* Style for list items */
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-
-    /* Style for links */
-    a {
-      color: #001f3f; /* Navy Blue */
-    }
-
-    @media only screen and (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-    }
-  </style>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>SMCC Website</h1>
-  </header>
-
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#courses">Courses Offered</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact Us</a>
+  <!-- Bootstrap Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">SMCC Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#courses">Courses Offered</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <section id="home" class="panel">
-    <div class="school-logo">
-      <img src="images/logo.png" alt="School Logo" height="300">
-    </div>
-    <h2 style="text-align: center;">SAINT MICHAEL COLLEGE OF CARAGA</h2>
-  </section>
+  <!-- Rest of your content with Bootstrap classes -->
+  <div class="container">
 
-  <section id="about" class="panel">
-    <div class="vision-mission">
-      <h2>Vision</h2>
-      <p>Saint Michael College of Caraga Envisions to be a University by 2035 and Upholds Spiritual Formation and Excellence in Teaching, Service, and Research.</p>
-    </div>
-    <div class="vision-mission">
-      <h2>Mission</h2>
-      <p>SMCC shall provide spiritual formation and learning culture that will ensure the students with excellent and rewarding learning experience that transform lives, abound spirituality, develop skills and prepare future leaders.</p>
-      <hr>
-      <p>SMCC shall engage in dynamic, innovative, and interdisciplinary researches that are publishable to advance and achieve institutional initiatives.</p>
-      <hr>
-      <p>SMCC shall commit to serve the diverse and local communities in fostering innovations through service-learning that enhances reciprocal community partnerships for spiritual and social development.</p>
+    <!-- Section: About -->
+    <section id="about" class="panel">
 
-      <h2>Goal </h2>
-        <p>
-  </h2>
-        </p>
-        Uphold Culture of Excellence in the Areas of Spiritual Formation, Instruction, Research, and Extension, thus Produce Graduates that are Globally Competent, Spiritally Embodied, and Socially Responsible.
-    </div>
-    
-  </section>
+      <!-- Bootstrap Jumbotron for the header -->
+      <div class="jumbotron text-center">
+        <img src="images/k.png" alt="School Logo" height="150">
+        <h2>SAINT MICHAEL COLLEGE OF CARAGA</h2>
+      </div>
 
+      <!-- Vision-Mission content with Bootstrap classes -->
+      <div class="vision-mission">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Vision</h2>
+            <p class="lead">Saint Michael College of Caraga envisions to be a University by 2035 and upholds spiritual
+              formation and excellence in teaching, service, and research.</p>
+          </div>
+          <div class="col-md-6">
+            <h2>Mission</h2>
+            <p class="lead">SMCC shall provide spiritual formation and a learning culture that will ensure students with
+              an excellent and rewarding learning experience, transforming lives, abounding spirituality, developing
+              skills, and preparing future leaders.</p>
+            <hr class="my-4">
+            <p class="lead">SMCC shall engage in dynamic, innovative, and interdisciplinary researches that are
+              publishable to advance and achieve institutional initiatives.</p>
+            <hr class="my-4">
+            <p class="lead">SMCC shall commit to serve the diverse and local communities in fostering innovations
+              through service-learning that enhances reciprocal community partnerships for spiritual and social
+              development.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Goal</h2>
+            <p class="lead">Uphold Culture of Excellence in the Areas of Spiritual Formation, Instruction, Research, and
+              Extension, thus Produce Graduates that are Globally Competent, Spiritually Embodied, and Socially
+              Responsible.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  <hr>
+
+  <!-- Section: Courses Offered -->
   <section id="courses" class="panel">
-    <h2 style="text-align: center;">Courses Offered</h2>
+    <h2 class="text-center">Courses Offered</h2>
 
-    <div class="courses-list">
-      <aside class="panel">
-        <h3>College of Arts and Sciences</h3>
-        <ul>
-          <li>Bachelor of Arts major in English Language</li>
-          <!-- Add more courses as needed -->
-        </ul>
-      </aside>
+    <div class="row">
 
-      <aside class="panel">
-        <h3>College of Business and Management</h3>
-        <ul>
-          <li>Bachelor of Science in Business Administration major in Financial Management</li>
-          <li>Bachelor of Science in Business Administration major in Human Resource Management</li>
-          <li>Bachelor of Science in Business Administration major in Marketing Management</li>
-          <li>Bachelor of Public Administration</li>
-          <li>Bachelor of Science in Entrepreneurship</li>
-          
-          <!-- Add more courses as needed -->
-        </ul>
-      </aside>
+      <!-- College of Arts and Sciences -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">College of Arts and Sciences</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Bachelor of Arts major in English Language</li>
+              <!-- Add more courses as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
 
-      <aside class="panel">
-        <h3>College of Computing and Information Science</h3>
-        <ul>
-          <li>Bachelor of Science in Information Technology</li>
-          <li>Bachelor of Science in Computer Science</li>
-          <li>Bachelor of Library and Information Science</li>
-          <li>Diploma In Information Technology</li>
-          <!-- Add more courses as needed -->
-        </ul>
-      </aside>
+      <!-- College of Hospitality Management -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">College of Hospitality Management</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Bachelor of Science in Hospitality Management</li>
+              <li class="list-group-item">Bachelor of Science in Tourism Management</li>
+              <li class="list-group-item">Diploma in Hospitality Management Technology</li>
+              <li class="list-group-item">Diploma in Tourism Management Technology</li>
+              <!-- Add more courses as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
 
-      <aside class="panel">
-        <h3>College of Criminal Justice Education</h3>
-        <ul>
-          <li>Bachelor of Science in Criminology</li>
-          <!-- Add more courses as needed -->
-        </ul>
-      </aside>
+      <!-- College of Computing and Information Sciences -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">College of Computing and Information Sciences</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Bachelor of Science in Information Technology</li>
+              <li class="list-group-item">Bachelor of Science in Computer Science</li>
+              <li class="list-group-item">Bachelor of Library and Information Sciences</li>
+              <!-- Add more courses as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
 
-      <aside class="panel">
-        <h3>College of Teacher Education</h3>
-        <ul>
-          <li>Bachelor of Elementary Education</li>
-          <li>Bachelor of Secondary Education major in English</li>
-          <li>Bachelor of Secondary Education major in Science</li>
-          <li>Bachelor of Secondary Education major in Social Studies</li>
-          <li>Bachelor of Physical Education</li>
-          <li>Bachelor of Technical Vocational Teacher Education</li>
-          <!-- Add more courses as needed -->
-        </ul>
-      </aside>
+      <!-- College of Business and Management -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">College of Business and Management</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Bachelor of Science in Business Administration major in Financial Management</li>
+              <li class="list-group-item">Bachelor of Science in Business Administration major in Marketing Management</li>
+              <li class="list-group-item">Bachelor of Science in Business Administration major in Human Resource Management</li>
+              <li class="list-group-item">Bachelor of Public Administration</li>
+              <!-- Add more courses as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
 
-      <aside class="panel">
-        <h3>College of Tourism and Hospitality Management</h3>
-        <ul>
-          <li>Bachelor of Science in Hospitality Management</li>
-          <li>Bachelor of Science in Tourism Management</li>
-          <li>Diploma in Hospitality Management Technology</li>
-          <li>Diploma in Tourism Management Technology</li>
-          <li>Food and Beverage Services NC II</li>
-          <li>Housekeeping NC II</li>
-          <li>Ship's Catering Services NC I</li>
-          <!-- Add more courses as needed -->
-        </ul>
-      </aside>
+      <!-- College of Teacher Education -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">College of Teacher Education</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Bachelor of Elementary Education</li>
+              <li class="list-group-item">Bachelor of Secondary Education major in English, Science, Mathematics, and Social Studies</li>
+              <!-- Add more courses as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section id="services" class="panel">
-    <h2>Services</h2>
-    <div class="services-list">
-      <aside class="panel">
-        <h3>Admission & Scholarship Services</h3>
-        <ul>
-          <li>College First Year Students except BSED and BEED Programs</li>
-          <!-- Add admission & scholarship services details -->
-        </ul>
-      </aside>
+  <!-- Section: Services -->
+  <section id="services" class="panel" style="text-align: center;">
+    <h2 class="text-center">Services</h2>
+
+    <div class="row justify-content-center"> <!-- Center the row horizontally -->
+
+      <!-- Admission & Scholarship Services -->
+      <div class="col-md-6">
+        <div class="card mx-auto"> <!-- Center the card horizontally -->
+          <div class="card-body">
+            <h3 class="card-title">Admission & Scholarship Services</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">College First Year Students except BSED and BEED Programs</li>
+              <!-- Add more service details as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <!-- Add other service sections similarly -->
+
     </div>
   </section>
 
+  <!-- Section: Contact Us -->
   <section id="contact" class="panel">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-      <p><a href="https://www.facebook.com/SMCCofficial">Facebook</a></p>
-      <p>Email: admin@smccnasipit.edu.ph</p>
-      <p>Phone: (085) 225-0208 / 0906-404-8695</p>
-      <p>Opening Hours: 8:00 am - 5:00 pm</p>
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Contact Information</h3>
+
+              <!-- Existing content goes here -->
+              <div class="contact-info">
+                <p><strong>Follow us on Facebook:</strong> <a href="https://www.facebook.com/SMCCofficial"
+                    target="_blank">SMCCofficial</a></p>
+                <p><strong>Email:</strong> <a href="mailto:admin@smccnasipit.edu.ph">admin@smccnasipit.edu.ph</a></p>
+                <p><strong>Phone:</strong> (085) 225-0208 / 0906-404-8695</p>
+                <p><strong>Opening Hours:</strong> 8:00 am - 5:00 pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer>
+  <!-- Bootstrap Footer -->
+  <footer class="footer">
     <p>&copy; 2024 SMCC Website. All rights reserved.</p>
   </footer>
 
+  <!-- Bootstrap JavaScript (optional) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
